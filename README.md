@@ -2,11 +2,11 @@
 
 ## 1 Introduction
 
-**Moka** is a **T**PU-**o**ptimized **𝑘**-means **a**lgorithm. This repo holds the source code and scripts for reproducing the key experiments of our paper:  <u>Boosting Incremental Balanced Clustering via TPU-Optimized 𝑘-means Algorithm</u>
+**Moka** is a **M**MA-**o**ptimized **𝑘**-means **a**lgorithm. This repo holds the source code and scripts for reproducing the key experiments of our paper:  <u>A New Perspective on Boosting Incremental and Balanced Clustering via Matrix Multiplication</u>
 
 ## 2 Data Process
 
-- Upload the notebook to `Colab` or any other platforms which have `CPU`, `GPU`, and `TPU` processor.
+- Upload the notebook to **Colab** to use a **TPU** processor, or purchase TPU resources directly from [Google Cloud](https://cloud.google.com/tpu/pricing?hl=en).
 - Put all the datasets into `./content/sample_data/`.
 - Then you can run the notebooks to get the results.
 
@@ -29,6 +29,7 @@ The datasets we use are all high-dimensional, with brief information as shown in
 1. [Balanced clustering with least square regression](https://ojs.aaai.org/index.php/AAAI/article/view/10877)
 1. [Fast clustering with flexible balance constraints](https://ieeexplore.ieee.org/abstract/document/8621917/)
 1. [Balanced k-means with a Novel Constraint](https://www.sciencedirect.com/science/article/pii/S0165168422001141)
+1. [Federated and Balanced Clustering for High-dimensional Data](https://dl.acm.org/doi/abs/10.14778/3749646.3749673)
 
 ### GPU based method
 
@@ -39,7 +40,7 @@ The datasets we use are all high-dimensional, with brief information as shown in
 
 1. [Enhancing k-Means Algorithm with Tensor Processing Unit](https://ieeexplore.ieee.org/abstract/document/10020427)
 
-### Incremental strategy
+### Incremental insertion scheme
 
 1. [Web-scale k-means clustering](https://dl.acm.org/doi/abs/10.1145/1772690.1772862)
 1. [Fully Dynamic k-Means Coreset in Near-Optimal Update Time](https://arxiv.org/abs/2406.19926)
@@ -56,7 +57,7 @@ You can run `Moka` and all the comparison algorithms in `jupyter notebook`
 n_runs = 10;
 
 % 1.comparison algorithms
-models = {'Lloyd', 'CDKM', 'BCLS', 'FCFC', 'BKNC', 'ASBK-means', 'GPU-Yinyang', 'GPU-CDKM', 'GPU-BCLS', 'GPU-FCFC', 'GPU-BKNC', 'DR-means', 'Moka'}
+models = {'Lloyd', 'CDKM', 'BCLS', 'FCFC', 'BKNC', 'Teb-means', 'ASBK-means', 'GPU-Yinyang', 'GPU-CDKM', 'GPU-BCLS', 'GPU-FCFC', 'GPU-BKNC', 'DR-means', 'Moka'}
 
 % 2.datasets
 datasets = {'rename this term into your datasets'};
