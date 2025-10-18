@@ -1,8 +1,8 @@
-# Toka
+# Moka
 
 ## 1 Introduction
 
-**Toka** is a **T**PU-**o**ptimized **𝑘**-means **a**lgorithm. This repo holds the source code and scripts for reproducing the key experiments of our paper:  <u>Boosting Incremental Balanced Clustering via TPU-Optimized 𝑘-means Algorithm</u>
+**Moka** is a **T**PU-**o**ptimized **𝑘**-means **a**lgorithm. This repo holds the source code and scripts for reproducing the key experiments of our paper:  <u>Boosting Incremental Balanced Clustering via TPU-Optimized 𝑘-means Algorithm</u>
 
 ## 2 Data Process
 
@@ -45,9 +45,9 @@ The datasets we use are all high-dimensional, with brief information as shown in
 1. [Fully Dynamic k-Means Coreset in Near-Optimal Update Time](https://arxiv.org/abs/2406.19926)
 1. [Novel partitional color quantization algorithm](https://www.sciencedirect.com/science/article/pii/S0957417422011708)
 
-## 4 How to Run Toka
+## 4 How to Run Moka
 
-You can run `Toka` and all the comparison algorithms in `jupyter notebook`
+You can run `Moka` and all the comparison algorithms in `jupyter notebook`
 
 **Parameter configuration:**
 
@@ -56,7 +56,7 @@ You can run `Toka` and all the comparison algorithms in `jupyter notebook`
 n_runs = 10;
 
 % 1.comparison algorithms
-models = {'Lloyd', 'CDKM', 'BCLS', 'FCFC', 'BKNC', 'ASBK-means', 'GPU-Yinyang', 'GPU-CDKM', 'GPU-BCLS', 'GPU-FCFC', 'GPU-BKNC', 'DR-means', 'Toka'}
+models = {'Lloyd', 'CDKM', 'BCLS', 'FCFC', 'BKNC', 'ASBK-means', 'GPU-Yinyang', 'GPU-CDKM', 'GPU-BCLS', 'GPU-FCFC', 'GPU-BKNC', 'DR-means', 'Moka'}
 
 % 2.datasets
 datasets = {'rename this term into your datasets'};
